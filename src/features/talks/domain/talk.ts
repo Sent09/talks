@@ -1,5 +1,6 @@
 import { Speaker } from '../../speakers/domain/speaker'
 import { Topic } from '../../topics/domain/topic'
+import { Hall } from './hall'
 import { Hour } from './hour'
 
 export interface Talk {
@@ -7,5 +8,5 @@ export interface Talk {
     speaker: Speaker
     hour: Hour
     topic: Topic
-    hall: any
+    hall: Hall
 }
