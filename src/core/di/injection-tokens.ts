@@ -1,1 +1,3 @@
-export const SPEAKER_REPOSITORY = Symbol.for('SPEAKER_REPOSITORY')
+export const TOKENS = {
+    SPEAKER_REPOSITORY: "SPEAKER_REPOSITORY"
+}
