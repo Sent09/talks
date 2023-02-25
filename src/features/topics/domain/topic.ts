@@ -1,4 +1,4 @@
 export interface Topic {
-    id: number,
+    id: number
     title: string
 }
