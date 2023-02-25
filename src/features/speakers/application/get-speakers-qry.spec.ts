@@ -1,4 +1,3 @@
-//import React from 'react'
 import 'reflect-metadata'
 import { GetSpeakerQry } from './get-speakers-qry'
 import { verify, instance, mock } from 'ts-mockito'
