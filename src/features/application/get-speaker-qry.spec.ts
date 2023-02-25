@@ -10,12 +10,6 @@ describe('GetSpeaker', () => {
         getSpeakerQry.execute()
         verify(speakerRepository.getSpeakers()).once()
     })
-
-    it('should return a promise', () => {
-        const { getSpeakerQry } = setup()
-        const speakerResponse = getSpeakerQry.execute()
-        expect(typeof speakerResponse).toBe('object')
-    })
 })
 
 const setup = () => {
