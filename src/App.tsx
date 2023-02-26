@@ -1,9 +1,9 @@
 import 'reflect-metadata'
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.scss';
-import { Home } from './core/pages/Home';
-import { NotFound } from './core/pages/NotFound';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.scss'
+import { Home } from './core/pages/Home'
+import { NotFound } from './core/pages/NotFound'
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 </Routes>
             </BrowserRouter>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
