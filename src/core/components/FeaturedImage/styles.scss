@@ -1,0 +1,42 @@
+.featured-image {
+    background-image: url('../../assets/featured.jpg');
+    height: 950px;
+    position: relative;
+    .featured-image-container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        h1 {
+            font-size: 100px;
+            color: #fff;
+            text-align: left;
+            letter-spacing: 3px;
+            font-weight: 700;
+            line-height: 85px;
+            position: relative;
+            z-index: 2;
+            strong {
+                color: #0040B0;
+            }
+            &:before {
+                content: '';
+                width: 100px;
+                height: 5px;
+                background-color: #fff;
+                display: block;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        bottom: 0px;
+    }
+}
