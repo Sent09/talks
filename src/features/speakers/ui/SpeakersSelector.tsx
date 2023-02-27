@@ -14,9 +14,9 @@ const SpeakersSelector: React.FC<SpeakersSelectorProps> = ({ setSelectedSpeaker 
             <select
                 data-testid="speaker-selector"
                 id="speaker-selector"
-                onChange={e => setSelectedSpeaker(e.target.value)}
+                onChange={e => setSelectedSpeaker(parseInt(e.target.value))}
             >
-                <option value="">Selecciona</option>
+                <option value="-1">Selecciona</option>
                 {selectOptions.map(options => {
                     return (
                         <option key={options.id} value={options.id}>
