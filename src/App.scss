@@ -3,11 +3,16 @@
 :root {
     --main-color: #081798;
     --secondary-color: #0040B0;
+    --complementary-color1: #505FE5;
+    --complementary-color2: #3C47AA;
+    --light-blue-color: #0041b02c;
     --gray-color: #444444;
     --light-gray-color: #f9fafc;
     --container-width: 1170px;
     --font-size-m: 16px;
-    --font-size-l: 36px;
+    --font-size-xl: 50px;
+    --section-padding: 100px;
+    --container-padding: 15px;
 }
 
 * {
@@ -15,17 +20,28 @@
     box-sizing: border-box;
 }
 
-.selector-container {
-    > * {
-        display: block;
-    }
-}
-
-
 .not-found {
     text-align: center;
 }
 
 p {
     font-size: var(--font-size-m);
+}
+
+h2 {
+    margin: 0px;
+    color: var(--main-color);
+    font-size: var(--font-size-xl);
+    line-height: var(--font-size-xl);
+    text-align: left;
+    font-weight: 100;
+    max-width: 350px;
+}
+
+h3 {
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: 20px;
+    font-weight: 100;
+    text-align: left;
 }

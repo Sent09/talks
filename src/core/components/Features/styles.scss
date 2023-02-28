@@ -4,28 +4,7 @@
         max-width: var(--container-width);
         margin: 0 auto;
         text-align: center;
-        padding: 150px 0px;
-        h2 {
-            margin: 0px;
-            color: var(--main-color);
-            font-size: var(--font-size-l);
-            &::after {
-                content: '';
-                width: 50px;
-                height: 3px;
-                background-color: var(--secondary-color);
-                display: block;
-                margin: 0 auto;
-                margin-top: 15px;
-            }
-        }
-        h3 {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto;
-            margin-top: 20px;
-            font-weight: 100;
-        }
+        padding: var(--section-padding) var(--container-padding);
         .boxes {
             display: flex;
             gap: 30px;
