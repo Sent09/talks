@@ -30,15 +30,18 @@ export const useGetTalks = ({ topicSelected, speakerSelected }: UseGetTalksProps
     }
 
     const getHours = () => {
-        return talks.map(({ hour: { start } }) => start).sort().filter((value, index, array) => {
-            return array.indexOf(value) === index;
-        })
+        return talks
+            .map(({ hour: { start } }) => start)
+            .sort()
+            .filter((value, index, array) => {
+                return array.indexOf(value) === index
+            })
     }
 
     const getHalls = () => {
         const returnHalls: Hall[] = []
         talks.forEach(({ hall }) => {
-            const checkExist = returnHalls.filter((hallFilter) => hallFilter.id === hall.id)
+            const checkExist = returnHalls.filter(hallFilter => hallFilter.id === hall.id)
             if (checkExist.length === 0) returnHalls.push(hall)
         })
         return returnHalls
@@ -56,11 +59,12 @@ export const useGetTalks = ({ topicSelected, speakerSelected }: UseGetTalksProps
     useEffect(() => {
         setHours(getHours())
         setHalls(getHalls())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [talks])
 
     return {
         hours,
         talks,
-        halls
+        halls,
     }
 }

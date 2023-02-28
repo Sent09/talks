@@ -59,12 +59,12 @@
                     padding: 20px 30px;
                     text-align: left;
                     color: #fff;
-                    font-weight: 100;
+                    font-weight: 700;
                     &:nth-child(2) {
-                        background-color: var(--complementary-color1);
+                        color: var(--complementary-color1);
                     }
                     &:nth-child(3) {
-                        background-color: var(--complementary-color2);
+                        color: var(--complementary-color2);
                     }
                 }
                 tr {
@@ -72,12 +72,13 @@
                     td {
                         &:first-child {
                             padding: 10px;
-                            color: #fff;
+                            color: var(--gray-color);
                             background-color: var(--table-cell1);
                             text-align: center;
                             font-weight: 700;
                             font-size: 20px;
                             width: 200px;
+                            height: 130px;
                         }
                         &:not(:first-child) {
                             padding: 30px;
@@ -98,6 +99,16 @@
                 }
             }
             &.tab-list {
+                h3 {
+                    font-size: 25px;
+                    text-align: left;
+                    font-weight: 700;
+                    color: var(--complementary-color1);
+                    margin-top: 0px;
+                    &:nth-child(3) {
+                        margin-top: 50px;
+                    }
+                }
                 ul {
                     padding: 0px;
                     li {
@@ -111,17 +122,23 @@
                             display: flex;
                             max-width: 200px;
                             width: 100%;
-                            color: #fff;
+                            color: var(--gray-color);
                             text-align: center;
                             font-weight: 700;
                             font-size: 20px;
                         }
-                        &:nth-child(2n) {
+                        .list-content {
+                            padding: 30px;
+                            p, h4, small {
+                                margin: 0px;
+                            }
+                        }
+                        &:nth-child(2n + 1) {
                             .hour {
                                 background-color: var(--table-cell1);
                             }
                         }
-                        &:nth-child(2n + 1) {
+                        &:nth-child(2n) {
                             .hour {
                                 background-color: var(--table-cell2);
                             }
