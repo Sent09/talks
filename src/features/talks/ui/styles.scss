@@ -1,0 +1,137 @@
+.talks {
+    background-color: var(--light-gray-color);
+    .talks-container {
+        padding: var(--section-padding) var(--container-padding);
+        max-width: var(--container-width);
+        margin: 0 auto;
+        .selectors {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            .selector-container {
+                > * {
+                    display: block;
+                }
+                select {
+                    width: 200px;
+                    padding: 10px;
+                    border-radius: 0px;
+                    margin-top: 10px;
+                    border: 0px;
+                    border-bottom: 2px solid var(--secondary-color);
+                    outline: 0px;
+                    font-size: 16px;
+                }
+                label {
+                    font-weight: 600;
+                }
+            }
+        }
+        .tabs-selectors {
+            button {
+                border: 0px;
+                font-size: 20px;
+                padding: 10px 30px;
+                background-color: var(--main-color);
+                color: #fff;
+                cursor: pointer;
+                &:nth-child(2) {
+                    background-color: var(--secondary-color);
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .tab {
+            border: 1px dashed #e5e5e5;
+            padding: 60px;
+            background-color: #fff;
+            &.none {
+                display: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                th {
+                    font-size: 25px;
+                    padding: 20px 30px;
+                    text-align: left;
+                    color: #fff;
+                    font-weight: 100;
+                    &:nth-child(2) {
+                        background-color: var(--complementary-color1);
+                    }
+                    &:nth-child(3) {
+                        background-color: var(--complementary-color2);
+                    }
+                }
+                tr {
+                    border-bottom: 1px dashed #e5e5e5;
+                    td {
+                        &:first-child {
+                            padding: 10px;
+                            color: #fff;
+                            background-color: var(--table-cell1);
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 20px;
+                            width: 200px;
+                        }
+                        &:not(:first-child) {
+                            padding: 30px;
+                            p {
+                                margin: 0px;
+                            }
+                            h4 {
+                                margin: 5px 0px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    &:nth-child(2n) {
+                        td:first-child {
+                            background-color: var(--table-cell2);
+                        }
+                    }
+                }
+            }
+            &.tab-list {
+                ul {
+                    padding: 0px;
+                    li {
+                        list-style: none;
+                        padding: 0px;
+                        display: flex;
+                        border-bottom: 1px dashed #e5e5e5;
+                        .hour {
+                            flex-direction: column;
+                            justify-content: center;
+                            display: flex;
+                            max-width: 200px;
+                            width: 100%;
+                            color: #fff;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 20px;
+                        }
+                        &:nth-child(2n) {
+                            .hour {
+                                background-color: var(--table-cell1);
+                            }
+                        }
+                        &:nth-child(2n + 1) {
+                            .hour {
+                                background-color: var(--table-cell2);
+                            }
+                        }
+                        &:first-child {
+                            border-top: 1px dashed #e5e5e5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

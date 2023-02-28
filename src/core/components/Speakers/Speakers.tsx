@@ -11,6 +11,7 @@ export const Speakers: React.FC = () => {
         <section className="speakers">
             <div className="speakers-container">
                 <h2>Nuestros ponentes</h2>
+                <hr />
                 <h3>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, laboriosam ipsum a ipsam culpa ut
                     ducimus.

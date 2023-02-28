@@ -5,7 +5,7 @@ export const FeaturedImage: React.FC = () => {
         <section className="featured-image">
             <div className="featured-image-container">
                 <h1>
-                    <span>3 DE MARZO</span> <br />
+                    <span>3 DE MARZO</span>
                     EVENTO <br />
                     <strong>TALKS</strong>
                 </h1>

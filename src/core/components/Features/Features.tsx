@@ -4,6 +4,7 @@ export const Features: React.FC = () => {
     return <section className='features'>
         <div className='features-container'>
             <h2>¿Por qué deberías venir?</h2>
+            <hr />
             <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, laboriosam ipsum a ipsam culpa ut ducimus.</h3>
             <div className='boxes'>
                 <div className='box'>
