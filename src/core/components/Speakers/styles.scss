@@ -31,3 +31,23 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .speakers {
+        .speakers-container {
+            .people {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .speakers {
+        .speakers-container {
+            .people {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

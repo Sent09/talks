@@ -130,7 +130,8 @@
                         }
                         .list-content {
                             padding: 30px;
-                            p, small {
+                            p,
+                            small {
                                 margin: 0px;
                             }
                             h4 {
@@ -151,6 +152,56 @@
                         }
                         &:first-child {
                             border-top: 1px dashed #e5e5e5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .talks {
+        .talks-container {
+            .tab {
+                padding: 60px 15px;
+                &.tab-table {
+                    overflow-x: scroll;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .talks {
+        .talks-container {
+            .tab {
+                table {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .talks {
+        .talks-container {
+            .selectors {
+                flex-wrap: wrap;
+                .selector-container {
+                    width: 100%;
+                    select {
+                        width: 100%;
+                    }
+                }
+            }
+            .tab.tab-list {
+                ul {
+                    li {
+                        .hour {
+                            max-width: 120px;
                         }
                     }
                 }

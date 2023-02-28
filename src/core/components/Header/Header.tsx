@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
                         </li>
                     </ul>
                 </nav>
-                <button type="button" onClick={() => setShowNav(!showNav)}>
+                <button type="button" onClick={() => setShowNav(!showNav)} className={showNav ? 'close' : ''}>
                     <span className="top"></span>
                     <span className="mid"></span>
                     <span className="bottom"></span>

@@ -67,6 +67,26 @@ header {
             background-color: transparent;
             border: none;
             padding: 0px;
+            span {
+                transition: transform 0.2s linear;
+            }
+            &.close {
+                .top {
+                    transition: transform 0.2s linear;
+                    transform: rotate(45deg);
+                    position: relative;
+                    top: 8px;
+                }
+                .mid {
+                    visibility: hidden;
+                }
+                .bottom {
+                    transition: transform 0.2s linear;
+                    position: relative;
+                    top: -8px;
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 }

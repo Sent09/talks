@@ -6,6 +6,7 @@ footer {
         padding: 35px var(--container-padding);
         text-align: center;
         ul {
+            padding: 0px;
             display: flex;
             list-style: none;
             justify-content: center;
@@ -52,6 +53,19 @@ footer {
             p {
                 margin-bottom: 0px;
                 color: #a8a8a8;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    footer {
+        .footer-container {
+            .footer-links {
+                ul {
+                    flex-direction: column;
+                    gap: 10px;
+                }
             }
         }
     }

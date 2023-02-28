@@ -38,3 +38,14 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .event-info {
+        .event-info-container {
+            flex-wrap: wrap;
+            .address, .map {
+                width: 100%;
+            }
+        }
+    }
+}

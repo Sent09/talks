@@ -68,3 +68,13 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .features {
+        .features-container {
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    }
+}
