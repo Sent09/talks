@@ -1,0 +1,91 @@
+.features {
+    background-color: var(--light-gray-color);
+    .features-container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+        text-align: center;
+        padding: 150px 0px;
+        h2 {
+            margin: 0px;
+            color: var(--main-color);
+            font-size: var(--font-size-l);
+            &::after {
+                content: '';
+                width: 50px;
+                height: 3px;
+                background-color: var(--secondary-color);
+                display: block;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-weight: 100;
+        }
+        .boxes {
+            display: flex;
+            gap: 30px;
+            margin-top: 80px;
+            .box {
+                border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 0px 20px 25px 0px rgb(0 0 0 / 8%);
+                text-align: left;
+                padding: 40px 50px;
+                transition: transform 0.2s linear;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: (right -20px) (top 10px);
+                background-size: 80px;
+                h4 {
+                    font-size: 30px;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    display: flex;
+                    &::before {
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        background-color: var(--secondary-color);
+                        display: block;
+                        position: relative;
+                        top: 19px;
+                        margin-right: 10px;
+                    }
+                }
+                p {
+                    font-weight: 100;
+                    line-height: 25px;
+                    margin-bottom: 0px;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--secondary-color);
+                    display: block;
+                    right: 0px;
+                    bottom: 0px;
+                }
+                &:nth-child(1) {
+                    background-image: url('./assets/front-end.png');
+                }
+                &:nth-child(2) {
+                    background-image: url('./assets/back-end.png');
+                }
+                &:nth-child(3) {
+                    background-image: url('./assets/devops.png');
+                }
+            }
+        }
+    }
+}

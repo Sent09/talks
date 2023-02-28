@@ -1,4 +1,4 @@
-import logo from '../../assets/logo-talks.png'
+import logo from './assets/logo-talks.png'
 import './styles.scss'
 
 export const Header: React.FC = () => {
@@ -10,6 +10,9 @@ export const Header: React.FC = () => {
                 </a>
                 <nav>
                     <ul>
+                        <li>
+                            <a href="/">Inicio</a>
+                        </li>
                         <li>
                             <a href="/">Nosotros</a>
                         </li>
