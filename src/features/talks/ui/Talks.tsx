@@ -22,7 +22,7 @@ export const Talks: React.FC = () => {
                 rowSpan={getHoursDuration(talkByHourHall[0].hour.start, talkByHourHall[0].hour.end)}
             >
                 <p>{talkByHourHall[0].speaker.name}</p>
-                <h4>{talkByHourHall[0].title}</h4>
+                <h3>{talkByHourHall[0].title}</h3>
                 <small>{talkByHourHall[0].topic.title}</small>
             </td>
         ) : (

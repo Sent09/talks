@@ -85,9 +85,10 @@
                             p {
                                 margin: 0px;
                             }
-                            h4 {
+                            h3 {
                                 margin: 5px 0px;
                                 font-size: 18px;
+                                font-weight: 700;
                             }
                         }
                     }
@@ -129,8 +130,13 @@
                         }
                         .list-content {
                             padding: 30px;
-                            p, h4, small {
+                            p, small {
                                 margin: 0px;
+                            }
+                            h4 {
+                                margin: 5px 0px;
+                                font-size: 18px;
+                                font-weight: 700;
                             }
                         }
                         &:nth-child(2n + 1) {
