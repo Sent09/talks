@@ -62,5 +62,56 @@ header {
                 }
             }
         }
+        button {
+            display: none;
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        .header-container {
+            nav {
+                position: absolute;
+                top: 69px;
+                background: #303030;
+                width: 100%;
+                left: 0px;
+                display: none;
+                ul {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 0px;
+                    a {
+                        color: #fff;
+                        display: flex;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover::after {
+                            display: none;
+                        }
+                    }
+                }
+                &.show {
+                    display: block;
+                }
+            }
+            button {
+                display: block;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                span {
+                    width: 30px;
+                    height: 3px;
+                    background-color: #3d3d3d;
+                    display: block;
+                }
+            }
+        }
     }
 }
