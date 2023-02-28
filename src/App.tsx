@@ -5,6 +5,7 @@ import './App.scss'
 import { Home } from './core/pages/Home'
 import { NotFound } from './core/pages/NotFound'
 import { Header } from './core/components/Header/Header'
+import { Footer } from './core/components/Footer/Footer'
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </div>
     )
 }
