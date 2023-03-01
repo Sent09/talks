@@ -109,6 +109,12 @@
                     &:nth-child(3) {
                         margin-top: 50px;
                     }
+                    &.no-talks {
+                        font-size: 18px;
+                        margin-top: 20px;
+                        font-weight: 100;
+                        color: #000;
+                    }
                 }
                 ul {
                     padding: 0px;
