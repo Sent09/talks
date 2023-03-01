@@ -3,8 +3,8 @@ import SpeakersSelector from '../../speakers/ui/SpeakersSelector'
 import TopicsSelector from '../../topics/ui/TopicsSelector'
 import { Hall } from '../domain/hall'
 import { useGetTalks } from './hooks/useGetTalks'
-import { getHoursDuration } from './utils/get-hours-duration'
-import { getNextHour } from './utils/get-next-hour'
+import { getHoursDuration } from '../../../core/utils/hours/get-hours-duration'
+import { getNextHour } from '../../../core/utils/hours/get-next-hour'
 import './styles.scss'
 
 export const Talks: React.FC = () => {
@@ -123,7 +123,7 @@ export const Talks: React.FC = () => {
                             )
                         })
                     ) : (
-                        <h3>No hay charlas para los filtros seleccionados.</h3>
+                        <h3 className="no-talks">No hay charlas para los filtros seleccionados.</h3>
                     )}
                 </div>
             </div>
