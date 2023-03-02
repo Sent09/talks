@@ -40,7 +40,7 @@ header {
                         transition: width 0.35s ease 0s;
                         position: absolute;
                     }
-                    &:hover::after{
+                    &:hover::after {
                         width: 100%;
                     }
                     &.buy-ticket {
@@ -100,7 +100,11 @@ header {
                 background: #303030;
                 width: 100%;
                 left: 0px;
-                display: none;
+                display: block;
+                height: 0px;
+                visibility: hidden;
+                overflow: hidden;
+                transition: height 0.5s linear;
                 ul {
                     flex-direction: column;
                     text-align: center;
@@ -118,6 +122,9 @@ header {
                 }
                 &.show {
                     display: block;
+                    height: 200px;
+                    transition: height 0.2s linear;
+                    visibility: visible;
                 }
             }
             button {
