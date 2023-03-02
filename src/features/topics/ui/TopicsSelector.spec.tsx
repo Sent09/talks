@@ -18,16 +18,16 @@ const setup = (filled = true) => {
             id: 2,
             title: 'Backend',
         },
-    ];
+    ]
 
-    (useGetTopics as jest.Mock).mockReturnValue({
+    ;(useGetTopics as jest.Mock).mockReturnValue({
         selectOptions: filled ? ResultExample : [],
     })
 
     render(<TopicsSelector setSelectedTopic={setSelectedTopic} />)
 
     return {
-        setSelectedTopic
+        setSelectedTopic,
     }
 }
 

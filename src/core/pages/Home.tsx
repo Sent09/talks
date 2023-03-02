@@ -9,7 +9,7 @@ import { Head } from '../components/Head/Head'
 export const Home: React.FC = () => {
     return (
         <>
-            <Head title='Inicio' description='Primer evento TALKS en Granada' />
+            <Head title="Inicio" description="Primer evento TALKS en Granada" />
             <FeaturedImage />
             <Features />
             <Speakers />

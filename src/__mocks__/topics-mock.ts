@@ -1,20 +1,20 @@
-import { Topic } from '../features/topics/domain/topic';
+import { Topic } from '../features/topics/domain/topic'
 
 export const TopicsMock: Topic[] = [
     {
         id: 1,
-        title: 'General'
+        title: 'General',
     },
     {
         id: 2,
-        title: 'Backend'
+        title: 'Backend',
     },
     {
         id: 3,
-        title: 'DevOps'
+        title: 'DevOps',
     },
     {
         id: 4,
-        title: 'Frontend'
-    }
+        title: 'Frontend',
+    },
 ]

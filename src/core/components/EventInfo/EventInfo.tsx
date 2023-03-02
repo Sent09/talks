@@ -13,7 +13,7 @@ export const EventInfo: React.FC = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta eaque odio eligendi
                         sit suscipit ullam et quas aliquam expedita!
                     </p>
-                    <h3>Palacio de Confresos de Granada</h3>
+                    <h3>Palacio de Congresos de Granada</h3>
                     <ul>
                         <li>
                             <img src={marker} alt="Icono de lugar" />{' '}

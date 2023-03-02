@@ -10,7 +10,7 @@ export const Head: React.FC<HeadProps> = ({ title, description }) => {
         <Helmet>
             <title>{`${title} - TALKS`}</title>
             <meta name="description" content={`${description}`} />
-            <meta name="keywords" content="talks, conferencia, charlas, palacio de congresos"/>
+            <meta name="keywords" content="talks, conferencia, charlas, palacio de congresos" />
             <meta property="og:locale" content="es_ES" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={`${title} - TALKS`} />

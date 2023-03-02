@@ -11,10 +11,10 @@ export const useGetTopics = () => {
         GetTopics.execute().then(topics => {
             setSelectOptions(topics)
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return {
-        selectOptions
+        selectOptions,
     }
 }
